@@ -22,7 +22,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ./vcpkg
-          key: v1
+          key: v2
 
       - name: Install Packages
         run: >-
