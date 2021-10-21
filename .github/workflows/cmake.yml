@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: Installing vcpkg (windows)
+    - name: Install vcpkg
       run: |
         cd ..
         git clone https://github.com/Microsoft/vcpkg.git
