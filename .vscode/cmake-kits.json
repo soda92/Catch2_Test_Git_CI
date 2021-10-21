@@ -1,7 +1,7 @@
 [
     {
         "name": "vcpkg",
-        "toolchainFile": "${workspaceFolder}/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "toolchainFile": "D:/src/vcpkg/scripts/buildsystems/vcpkg.cmake",
         "visualStudioArchitecture": "x86",
         "preferredGenerator": {
             "name": "Visual Studio 16 2019",
