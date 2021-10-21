@@ -28,14 +28,6 @@ jobs:
         with:
           submodules: true
 
-      - name: Restore vcpkg artifacts
-        uses: actions/cache@v2
-        with:
-          path: |
-            ${{env.VCPKG_ROOT}}
-          key: |
-            ${{hashFiles('.git/modules/vcpkg/HEAD')}}
-
       - name: Install Packages
         run: |
           ./vcpkg/bootstrap-vcpkg.sh
