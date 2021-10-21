@@ -7,6 +7,7 @@ unsigned int Factorial(unsigned int number)
 
 int main()
 {
-    fmt::print("factorial(0) = {}\n", Factorial(0));
+    unsigned int n = 5;
+    fmt::print("factorial({}) = {}\n", n, Factorial(n));
     return 0;
 }
