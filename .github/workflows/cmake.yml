@@ -26,7 +26,7 @@ jobs:
           restore-keys: v
 
       - name: Install Packages
-        run: >-
+        run: |
           if [ ! -d "./vcpkg" ]; then
               git clone --depth 1 https://github.com/microsoft/vcpkg.git
               ./vcpkg/bootstrap-vcpkg.sh
