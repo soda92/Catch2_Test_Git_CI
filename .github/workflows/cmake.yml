@@ -23,6 +23,7 @@ jobs:
         with:
           path: ./vcpkg
           key: v2
+          restore-keys: v
 
       - name: Install Packages
         run: >-
@@ -31,6 +32,7 @@ jobs:
               ./vcpkg/bootstrap-vcpkg.sh
               ./vcpkg/vcpkg install fmt catch2
           fi
+          ./vcpkg/vcpkg upgrade --no-dry-run
 
       - name: Configure CMake
         run: cmake -B build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
